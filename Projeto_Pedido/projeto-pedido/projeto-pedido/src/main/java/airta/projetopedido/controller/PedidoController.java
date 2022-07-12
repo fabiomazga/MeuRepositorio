@@ -12,8 +12,8 @@ public class PedidoController {
 
     @Autowired
     private PedidoRepository repository;
-    @GetMapping(path = "/api/pedido/{numero_pedido}")
 
+    @GetMapping(path = "/api/pedido/{numero_pedido}")
     public ResponseEntity consultar(@PathVariable("numero_pedido") Integer numero_pedido){
         return repository.findById(numero_pedido)
                 .map(record -> ResponseEntity.ok().body(record))
@@ -25,5 +25,11 @@ public class PedidoController {
         return repository.save(pedido);
     }
 
-
+//    @GetMapping(path = "/api/pedido/imprimir/{numero_pedido}")
+//    public ResponseEntity imprimir(@PathVariable("numero_pedido") Integer numero_pedido){
+//        return repository.findById(numero_pedido)
+//                .map(record -> ResponseEntity.ok().body(record))
+//                .orElse(ResponseEntity.notFound().build());
+//
+//    }
 }

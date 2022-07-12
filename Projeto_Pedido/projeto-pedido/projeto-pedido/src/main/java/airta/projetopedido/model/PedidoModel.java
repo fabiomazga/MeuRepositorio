@@ -11,7 +11,7 @@ public class PedidoModel {
     public Integer numero_pedido;
 
     @Column(nullable = false,length = 10)
-    public Integer codigo_produto;
+    public Integer codigo_item;
     @Column(nullable = false,length = 10)
     public Float preco;
     @Column(nullable = false,length = 10)
@@ -25,12 +25,12 @@ public class PedidoModel {
         this.numero_pedido = numero_pedido;
     }
 
-    public Integer getCodigo_produto() {
-        return codigo_produto;
+    public Integer getCodigo_item() {
+        return codigo_item;
     }
 
-    public void setCodigo_produto(Integer codigo_produto) {
-        this.codigo_produto = codigo_produto;
+    public void setCodigo_item(Integer codigo_item) {
+        this.codigo_item = codigo_item;
     }
 
     public Float getPreco() {
