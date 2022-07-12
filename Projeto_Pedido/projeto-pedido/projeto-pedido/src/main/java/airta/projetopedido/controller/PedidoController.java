@@ -24,4 +24,6 @@ public class PedidoController {
     public PedidoModel salvar(@RequestBody PedidoModel pedido){
         return repository.save(pedido);
     }
+
+
 }
