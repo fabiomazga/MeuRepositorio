@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1581447605 source:c:\users\note-tomaz\documents\codeblocks\23_numeros_aleatorios\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1604166412 source:c:\users\tomaz\documents\codeblocks\23_numeros_aleatorios\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
